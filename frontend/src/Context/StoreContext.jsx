@@ -1,4 +1,4 @@
-import { createContext ,useEffect,useState} from "react";
+import { createContext ,useState} from "react";
 import { food_list } from "../assets/frontend_assets/assets";
 
 export const StoreContext = createContext(null);
@@ -21,10 +21,19 @@ const StoreConextProvide = (props)=>{
         
     }
 
-useEffect(() => {
-console.log("Cart Items Updated:", cartItems);
-    // Initialize cart items from localStorage if available
-},[cartItems]);
+    const getTotalCartAmount = () => {
+        let totalAmount = 0;
+        for(const item in cartItems)
+        {
+            if(cartItems[item] > 0) 
+            {
+            let itemInfo = food_list.find((product) => product._id === item);
+            totalAmount += itemInfo.price * cartItems[item];
+            }
+            
+        }
+        return totalAmount;
+    }
 
 
     const contextValue = {        // Define any state or functions you want to provide to the context
@@ -32,7 +41,8 @@ console.log("Cart Items Updated:", cartItems);
     cartItems,
     setCartItems,
     addToCart,
-    removeFromCart
+    removeFromCart,
+    getTotalCartAmount
 
     };
     return (

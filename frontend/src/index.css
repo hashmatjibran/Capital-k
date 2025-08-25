@@ -5,10 +5,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif,monospace;
+  overflow-y: scroll;
+  scroll-behavior: smooth !important;
+  
 }
+
 body{
   min-height: 100vh;
-
 }
 a{
   text-decoration: none;

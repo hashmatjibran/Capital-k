@@ -51,7 +51,53 @@ font-size: 18px;
     min-width: 10px;
     min-height:10px ;
     background-color: tomato;
-    border-radius: 5px;
-    top: -8px;
-    right: -8px;
+    border-radius: 50%;
+    top: -2px;
+    right: -3px;
+}
+@media (max-width: 1050px) {
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 750px) {
+    .navbar-menu{
+       display: none;
+    }
+    
 }

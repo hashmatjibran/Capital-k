@@ -5,8 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Outfit", sans-serif,monospace;
-  overflow-y: scroll;
-  scroll-behavior: smooth !important;
+  
   
 }
 

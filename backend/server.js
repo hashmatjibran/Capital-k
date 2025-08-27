@@ -13,12 +13,15 @@ const port =4000;
 app.use(express.json())
 app.use(cors())
 
-// add Db connection    
+// add Database connection    
 connectDb();
 
 
 // api endpoint
 app.use("/api/food",foodRouter);
+
+app.use('/images',express.static('uploads'));
+
 
 app.get('/',(request , response)=>{
     console.log('hey');

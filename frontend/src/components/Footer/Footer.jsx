@@ -33,7 +33,7 @@ const Footer = () => {
             <h2>GET IN TOUCH</h2>
             <ul>
                 <li>
-                    +10 123 456 7890
+                    +91 8491849707
                 </li>
                 <li>
                     conatct@orle.com
@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
       <hr />    
       <p className="footer-copyright">
-        Copyright © 2023 Capital-k. All rights reserved. Designed by Orle.com
+        Copyright © 2023 Capital-k. All rights reserved. Powered by <a href="http://www.orle.in" target="_blank">Orle</a>
       </p>
     </div>
   );
